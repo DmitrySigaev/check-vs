@@ -1,0 +1,7 @@
+F:/ProjectExt/check-vs/./installed/include/check_stdint.h
+F:/ProjectExt/check-vs/./installed/lib/compat.lib
+F:/ProjectExt/check-vs/./installed/include/libcompat.h
+F:/ProjectExt/check-vs/./installed/lib/check.lib
+F:/ProjectExt/check-vs/./installed/include/check.h
+F:/ProjectExt/check-vs/./installed/cmake/check.cmake
+F:/ProjectExt/check-vs/./installed/cmake/check-debug.cmake
