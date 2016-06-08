@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\ProjectExt\check-vs\check\src\check.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\ProjectExt\check-vs\check\src\check_error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\ProjectExt\check-vs\check\src\check_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\ProjectExt\check-vs\check\src\check_log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\ProjectExt\check-vs\check\src\check_msg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\ProjectExt\check-vs\check\src\check_pack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\ProjectExt\check-vs\check\src\check_print.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\ProjectExt\check-vs\check\src\check_run.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\ProjectExt\check-vs\check\src\check_str.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\ProjectExt\check-vs\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\ProjectExt\check-vs\src\check.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\ProjectExt\check-vs\check\src\check.h.in">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\ProjectExt\check-vs\check\src\check_error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\ProjectExt\check-vs\check\src\check_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\ProjectExt\check-vs\check\src\check_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\ProjectExt\check-vs\check\src\check_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\ProjectExt\check-vs\check\src\check_msg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\ProjectExt\check-vs\check\src\check_pack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\ProjectExt\check-vs\check\src\check_print.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\ProjectExt\check-vs\check\src\check_str.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\ProjectExt\check-vs\check\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E1512D27-3C76-475C-AA7E-E92F8E63523D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C4BFD347-05AA-42B1-9C64-F381FCCCA4FD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
