@@ -1,7 +1,0 @@
-F:/ProjectExt/check-vs/msvcprj/../installed/include/check_stdint.h
-F:/ProjectExt/check-vs/msvcprj/../installed/lib/compat.lib
-F:/ProjectExt/check-vs/msvcprj/../installed/include/libcompat.h
-F:/ProjectExt/check-vs/msvcprj/../installed/lib/check.lib
-F:/ProjectExt/check-vs/msvcprj/../installed/include/check.h
-F:/ProjectExt/check-vs/msvcprj/../installed/cmake/check.cmake
-F:/ProjectExt/check-vs/msvcprj/../installed/cmake/check-debug.cmake

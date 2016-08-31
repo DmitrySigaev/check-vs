@@ -1,3 +1,0 @@
-check_check 1 22.5791
-check_check_export 1 0.25
----
