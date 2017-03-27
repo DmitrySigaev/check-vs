@@ -1,0 +1,111 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "windows": {
+                "command": "${workspaceRoot}/build.cmd",
+                "args": [
+                    "<Path/To/MinGW/Cygwin/Bin/Folder>",
+                    ""
+                ]
+            },
+            "linux": {
+                "command": "gcc",
+                "args": [
+                    "-c",
+                    "../../check/lib/clock_gettime.c",
+                    "../../check/lib/getline.c",
+     /*               "../../check/lib/gettimeofday.c",*/
+                    "../../check/lib/libcompat.c",
+                    "../../check/lib/localtime_r.c",
+                    "../../check/lib/strsignal.c",
+                    "../../check/lib/timer_create.c",
+                    "../../check/lib/timer_delete.c",
+                    "../../check/lib/timer_settime.c",
+                    "../../check/lib/libcompat.h",
+                    "-I ../src-linux",
+                    "-DENABLE_SUBUNIT=0 -DHAVE_CONFIG_H -DHAVE_FORK=0 -DHAVE_LIBRT=1 -DHAVE_MKSTEMP=1 -DHAVE_SNPRINTF=1 -DHAVE_VSNPRINTF=1 -DSTRUCT_ITIMERSPEC_DEFINITION_MISSING=1"
+                ]
+            },
+            "osx": {
+                "command": "g++",
+                "args": [
+                    "-g",
+                    "*.cpp",
+                    "-lpthread",
+                    "--std=c++11",
+                    "-o",
+                    "fib.out"
+                ]
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "linking",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "windows": {
+                "command": "${workspaceRoot}/build.cmd",
+                "args": [
+                    "<Path/To/MinGW/Cygwin/Bin/Folder>",
+                    ""
+                ]
+            },
+            "linux": {
+                "command": "ar",
+                "args": [
+                    "rcs",
+                    "libcompat.a",
+                    "clock_gettime.o",
+                    "getline.o",
+                /*    "gettimeofday.o", */
+                    "libcompat.o",
+                    "localtime_r.o",
+                    "strsignal.o",
+                    "timer_create.o",
+                    "timer_delete.o",
+                    "timer_settime.o"
+                ]
+            },
+            "osx": {
+                "command": "g++",
+                "args": [
+                    "-g",
+                    "*.cpp",
+                    "-lpthread",
+                    "--std=c++11",
+                    "-o",
+                    "fib.out"
+                ]
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }   
+    ]
+}

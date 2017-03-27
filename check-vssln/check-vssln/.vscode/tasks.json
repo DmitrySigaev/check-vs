@@ -1,0 +1,112 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "windows": {
+                "command": "${workspaceRoot}/build.cmd",
+                "args": [
+                    "<Path/To/MinGW/Cygwin/Bin/Folder>",
+                    ""
+                ]
+            },
+            "linux": {
+                "command": "gcc",
+                "args": [
+                    "-Wall -pedantic -ansi -c",
+                      "../../check/src/check.c",
+                      "../../check/src/check_error.c",
+                      "../../check/src/check_list.c",
+                      "../../check/src/check_log.c",
+                      "../../check/src/check_msg.c",
+                      "../../check/src/check_pack.c",
+                      "../../check/src/check_print.c",
+                      "../../check/src/check_run.c",
+                      "../../check/src/check_str.c",
+                      "../../check/src/check_error.h",
+                      "-I ../src-linux",
+                      "-I ../../check/src",
+                      "-DENABLE_SUBUNIT=0 -DHAVE_CONFIG_H -DHAVE_FORK=0 -DHAVE_LIBRT=1 -DHAVE_MKSTEMP=1 -DHAVE_SNPRINTF=1 -DHAVE_VSNPRINTF=1 -DSTRUCT_ITIMERSPEC_DEFINITION_MISSING=1"
+                ]
+            },
+            "osx": {
+                "command": "g++",
+                "args": [
+                    "-g",
+                    "*.cpp",
+                    "-lpthread",
+                    "--std=c++11",
+                    "-o",
+                    "fib.out"
+                ]
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "linking",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "windows": {
+                "command": "${workspaceRoot}/build.cmd",
+                "args": [
+                    "<Path/To/MinGW/Cygwin/Bin/Folder>",
+                    ""
+                ]
+            },
+            "linux": {
+                "command": "ar",
+                "args": [
+                    "rcs",
+                    "libcheck.a",
+                    "check.o",
+                    "check_error.o",
+                    "check_list.o",
+                    "check_log.o",
+                    "check_msg.o",
+                    "check_pack.o",
+                    "check_print.o",
+                    "check_run.o",
+                    "check_str.o",
+              ]
+            },
+            "osx": {
+                "command": "g++",
+                "args": [
+                    "-g",
+                    "*.cpp",
+                    "-lpthread",
+                    "--std=c++11",
+                    "-o",
+                    "fib.out"
+                ]
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }   
+    ]
+}
