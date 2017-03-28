@@ -26,7 +26,7 @@
             "linux": {
                 "command": "gcc",
                 "args": [
-                    "-c",
+                    "-c -g",
                     "../../check/lib/clock_gettime.c",
                     "../../check/lib/getline.c",
      /*               "../../check/lib/gettimeofday.c",*/
@@ -36,7 +36,7 @@
                     "../../check/lib/timer_create.c",
                     "../../check/lib/timer_delete.c",
                     "../../check/lib/timer_settime.c",
-                    "../../check/lib/libcompat.h",
+                   /* "../../check/lib/libcompat.h",*/
                     "-I ../src-linux",
                     "-DENABLE_SUBUNIT=0 -DHAVE_CONFIG_H -DHAVE_FORK=0 -DHAVE_LIBRT=1 -DHAVE_MKSTEMP=1 -DHAVE_SNPRINTF=1 -DHAVE_VSNPRINTF=1 -DSTRUCT_ITIMERSPEC_DEFINITION_MISSING=1"
                 ]

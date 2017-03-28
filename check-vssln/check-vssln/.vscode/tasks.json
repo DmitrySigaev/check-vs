@@ -26,7 +26,7 @@
             "linux": {
                 "command": "gcc",
                 "args": [
-                    "-Wall -pedantic -ansi -c",
+                    "-Wall -pedantic -ansi -c -g",
                       "../../check/src/check.c",
                       "../../check/src/check_error.c",
                       "../../check/src/check_list.c",
@@ -36,7 +36,7 @@
                       "../../check/src/check_print.c",
                       "../../check/src/check_run.c",
                       "../../check/src/check_str.c",
-                      "../../check/src/check_error.h",
+                      /* "../../check/src/check_error.h", */
                       "-I ../src-linux",
                       "-I ../../check/src",
                       "-DENABLE_SUBUNIT=0 -DHAVE_CONFIG_H -DHAVE_FORK=0 -DHAVE_LIBRT=1 -DHAVE_MKSTEMP=1 -DHAVE_SNPRINTF=1 -DHAVE_VSNPRINTF=1 -DSTRUCT_ITIMERSPEC_DEFINITION_MISSING=1"
